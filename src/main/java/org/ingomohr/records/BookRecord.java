@@ -9,9 +9,9 @@ public record BookRecord(String title, int id) {
     // - equals, hashCode, toString
     // - 2 records are equal if all their components are equal
 
-    // Some instance method
-    public String titleInUpperCases() {
-        return title().toUpperCase();
-    }
+    // What's also possible
+    // - add instance methods
+    // - add static methods
+    // - add static fields
 
 }
