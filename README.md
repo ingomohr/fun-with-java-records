@@ -6,6 +6,10 @@ Some sample stuff basically for showcasing and learning things around Java recor
 * https://youtu.be/gJ9DYC-jswo
 * John Marty, Coding with John
 
+"Records Patterns, Performance and Serialization - JEP Café #8"
+* https://youtu.be/1oC9ESbyvqs
+* José Paumard, JEP Café
+
 # Q&A
 ## Why are Records Immutable?
 Records are designed to be immutable.

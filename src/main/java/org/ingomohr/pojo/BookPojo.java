@@ -1,11 +1,16 @@
 package org.ingomohr.pojo;
 
-public class BookPojo {
+import java.io.Serializable;
+
+public class BookPojo implements Serializable {
 
     private final String title;
     private final int id;
 
     public BookPojo(String title, int id) {
+        if (id == 42) {
+            throw new IllegalArgumentException("Unsupported id: " + id);
+        }
         this.title = title;
         this.id = id;
     }
