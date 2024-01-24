@@ -16,4 +16,6 @@ buildNumber.properties
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 # serialization file created while running 'mvn verify'
-xObjectSer.txt
+xObjectRecord.ser
+xObjectPojo.ser
+

@@ -1,6 +1,8 @@
 package org.ingomohr.records;
 
-public record BookRecord(String title, int id) {
+import java.io.Serializable;
+
+public record BookRecord(String title, int id) implements Serializable {
 
     // this "virtually" creates
     // - a canonical constructor
@@ -26,8 +28,8 @@ public record BookRecord(String title, int id) {
  */
     // if we want to modify the canonical constructor, we can use a compact constructor, too
     public BookRecord {
-        if (id < 0) {
-            throw new IllegalArgumentException("Id cannot be negative: " + id);
+        if (id == 42) {
+            throw new IllegalArgumentException("Id not supported: " + id);
         }
     }
 
