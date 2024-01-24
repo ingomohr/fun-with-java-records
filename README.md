@@ -8,7 +8,7 @@ Some sample stuff basically for showcasing and learning things around Java recor
 
 # Q&A
 ## Why are Records Immutable?
-By Design: Records are designed that way.
+Records are designed to be immutable.
 
 ### Some Benefits of Immutability
 - **Simplicity and Safety** (objects that don't change can reduce complexity and potential errors)
