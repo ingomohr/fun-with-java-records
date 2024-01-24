@@ -19,8 +19,36 @@ Records are designed to be immutable.
 ## Can I make my Record Extend some other Class?
 No. Each record extends class `java.lang.Record`, and Java doesn't have multiple inheritance.
 
+## Can I have my Record implement an interface?
+Yup.
+
 ## Can I extend my Record?
 No. Every record is automatically `final` - whether or not you add the keyword.
+
+## Can I override the canonical constructor?
+Yup. Just declare it again with your own impl. Can be useful if you want to validate your input.
+
+You can use a compact constructor, too:
+```java
+public BookRecord {
+    if (id < 0) {
+        throw new IllegalArgumentException("Id cannot be negative: " + id);
+    }
+}
+```
+
+This is effectively the same as this:
+```java
+public BookRecord(String title, int id) {
+    if (id < 0) {
+        throw new IllegalArgumentException("Id cannot be negative: " + id);
+    }
+    this.title = title;
+    this.id = id;
+}
+```
+
+
 
 
 
