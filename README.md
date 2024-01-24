@@ -52,6 +52,10 @@ public BookRecord(String title, int id) {
 }
 ```
 
+## What About Serialization?
+**For a POJO**: If you deserialize data into an object, the constructor is never called. i.e. if you have validation in the constructor, that validation is bypassed.
+
+**For a Record**: The constructor of a Record is always called - even during serialization.
 
 
 
