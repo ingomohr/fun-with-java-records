@@ -8,7 +8,7 @@ public class Main {
         BookPojo bookPojo = new BookPojo("Lord of the Rings", 12345);
         System.out.println(bookPojo);
 
-        BookRecord bookRecord = new BookRecord("The Wind in the Willow", 42);
+        BookRecord bookRecord = new BookRecord("The Wind in the Willows", 42);
         System.out.println(bookRecord);
 
     }
