@@ -8,8 +8,10 @@ public class Main {
         BookPojo bookPojo = new BookPojo("Lord of the Rings", 12345);
         System.out.println(bookPojo);
 
-        BookRecord bookRecord = new BookRecord("The Wind in the Willows", 42);
-        System.out.println(bookRecord);
+        var bookRecord = new BookRecord("The Wind in the Willows", 41);
+        var newBook = bookRecord.withId(43);
+        System.out.println(newBook);
+
 
     }
 }

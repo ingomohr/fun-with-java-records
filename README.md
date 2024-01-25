@@ -57,6 +57,23 @@ public BookRecord(String title, int id) {
 
 **For a Record**: The constructor of a Record is always called - even during serialization.
 
+## How can I can Get a Record that Takes Over Most of the Fields of an Existing One?
+You could add a factory method to our record type:
+
+```java
+public BookRecord withId(int id) {
+    return new BookRecord(this.title, id);
+}
+```
+and call that
+```java
+var bookRecord = new BookRecord("The Wind in the Willows", 41);
+var newBook = bookRecord.withId(43);
+```
+
+
+
+
 
 
 
